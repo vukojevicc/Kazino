@@ -3,10 +3,11 @@
     padding: 0;
     box-sizing: border-box;
     color: #fff;
+    --dugme: #f0c817;
 }
 body{
-    height: 1000px;
     background-image: linear-gradient(90deg, rgba(32,45,59,255) 0%,  rgba(70,89,103,255) 47%, rgba(70,89,103,255) 53%, rgba(32,45,59,255) 100%);
+    padding: 10px 40px;
 }
 .heading p{
     text-transform: uppercase;
@@ -17,5 +18,31 @@ body{
 }
 .heading{
     text-align: center;
-    margin-top: 25px;
+    margin-top: 15px;
+}
+.step{
+    text-align: center;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.829);
+}
+.step p{
+    color: rgba(255, 255, 255, 0.753);
+    padding-bottom: 40px;
+    position: relative;
+    margin-top: -75px;
+}
+.step a{
+    text-decoration: none;
+    color: var(--dugme);
+}
+.step a:hover{
+    color: #fbff00;
+}
+.number{
+    font-size: 135px;
+    font-weight: 900;
+    color: rgba(255, 255, 255, 0.171);
+    letter-spacing: -7px;
+}
+.step:last-of-type{
+    border: none;
 }
