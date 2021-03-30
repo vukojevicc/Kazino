@@ -1,0 +1,9 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    height: 1000px;
+    background-image: linear-gradient(90deg, rgba(32,45,59,255) 0%, rgba(69,88,102,255) 40%, rgba(69,88,102,255) 50%, rgba(69,88,102,255) 60%, rgba(32,45,59,255) 100%);
+}
