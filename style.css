@@ -32,7 +32,8 @@ body{
     position: relative;
     margin-top: -75px;
 }
-.step a{
+.step a,
+.yellow_span{
     text-decoration: none;
     font-weight: 600;
     color: var(--dugme);
