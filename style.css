@@ -6,6 +6,8 @@
     --dugme: #f0c817;
     --light-side-button: rgba(255, 255, 255, 0.377);
     --dark-side-button: rgba(0, 0, 0, 0.336);
+    --text-color: rgba(255, 255, 255, 0.781);
+    --videos-margin-top: 130px;
 }
 body{
     background-image: linear-gradient(90deg, rgba(32,45,59,255) 0%,  rgba(70,89,103,255) 47%, rgba(70,89,103,255) 53%, rgba(32,45,59,255) 100%);
@@ -27,7 +29,7 @@ body{
     border-bottom: 1px solid rgba(255, 255, 255, 0.829);
 }
 .step p{
-    color: rgba(255, 255, 255, 0.781);
+    color: var(--text-color);
     padding-bottom: 40px;
     position: relative;
     margin-top: -75px;
@@ -72,4 +74,38 @@ body{
     border-left: 4px solid var(--light-side-button);
     border-bottom: 4px solid var(--dark-side-button);
     border-right: 4px solid var(--dark-side-button);
+}
+.videos{
+    display: flex;
+    justify-content: space-around;
+    margin-top: var(--videos-margin-top);
+}
+.video{
+    width: 90%;
+    height: 180px;
+    margin-top: 50px;
+}
+.video-container{
+    width: 40%;
+    text-align: center;
+    position: relative;
+}
+.video-container h2{
+    text-align: center;
+    color: var(--text-color);
+    position: absolute;
+    top: -10%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+@media screen and (max-width: 1008px){
+    .videos{
+        flex-direction: column;
+    }
+    .video-container{
+        width: 100%;
+    }
+    .video-container:nth-child(2){
+        margin-top: var(--videos-margin-top);
+    }
 }
